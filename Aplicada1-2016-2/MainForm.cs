@@ -19,6 +19,7 @@ namespace Aplicada1_2016_2
         private void separarCadenaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SepararCadenas separarCadenas = new SepararCadenas();
+            separarCadenas.MdiParent = this;
             separarCadenas.Show();
         }
     }
