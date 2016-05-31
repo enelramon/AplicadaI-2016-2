@@ -22,5 +22,12 @@ namespace Aplicada1_2016_2
             separarCadenas.MdiParent = this;
             separarCadenas.Show();
         }
+
+        private void exportarExellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExportaraExecel ex = new ExportaraExecel();
+
+            ex.Show();
+        }
     }
 }

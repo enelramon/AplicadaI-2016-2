@@ -42,6 +42,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.exportarExellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -62,7 +63,8 @@
             // 
             this.ejerciciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.separarCadenaToolStripMenuItem,
-            this.ordenarCadenasToolStripMenuItem});
+            this.ordenarCadenasToolStripMenuItem,
+            this.exportarExellToolStripMenuItem});
             this.ejerciciosToolStripMenuItem.Name = "ejerciciosToolStripMenuItem";
             this.ejerciciosToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.ejerciciosToolStripMenuItem.Text = "&Ejercicios";
@@ -150,6 +152,13 @@
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 20);
             this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
             // 
+            // exportarExellToolStripMenuItem
+            // 
+            this.exportarExellToolStripMenuItem.Name = "exportarExellToolStripMenuItem";
+            this.exportarExellToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.exportarExellToolStripMenuItem.Text = "Exportar Exell";
+            this.exportarExellToolStripMenuItem.Click += new System.EventHandler(this.exportarExellToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,6 +197,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem exportarExellToolStripMenuItem;
     }
 }
 
