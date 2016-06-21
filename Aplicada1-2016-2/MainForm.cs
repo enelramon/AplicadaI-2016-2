@@ -25,9 +25,13 @@ namespace Aplicada1_2016_2
 
         private void exportarExellToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ExportaraExecel ex = new ExportaraExecel();
+          
+        }
 
-            ex.Show();
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rCategorias rCategoria = new rCategorias();
+            rCategoria.Show();
         }
     }
 }

@@ -33,6 +33,7 @@
             this.ejerciciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.separarCadenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenarCadenasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarExellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -42,7 +43,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.exportarExellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -64,7 +66,9 @@
             this.ejerciciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.separarCadenaToolStripMenuItem,
             this.ordenarCadenasToolStripMenuItem,
-            this.exportarExellToolStripMenuItem});
+            this.exportarExellToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.categoriasToolStripMenuItem});
             this.ejerciciosToolStripMenuItem.Name = "ejerciciosToolStripMenuItem";
             this.ejerciciosToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.ejerciciosToolStripMenuItem.Text = "&Ejercicios";
@@ -81,6 +85,13 @@
             this.ordenarCadenasToolStripMenuItem.Name = "ordenarCadenasToolStripMenuItem";
             this.ordenarCadenasToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.ordenarCadenasToolStripMenuItem.Text = "5. Ordenar cadenas";
+            // 
+            // exportarExellToolStripMenuItem
+            // 
+            this.exportarExellToolStripMenuItem.Name = "exportarExellToolStripMenuItem";
+            this.exportarExellToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.exportarExellToolStripMenuItem.Text = "Exportar Exell";
+            this.exportarExellToolStripMenuItem.Click += new System.EventHandler(this.exportarExellToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -152,12 +163,17 @@
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 20);
             this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
             // 
-            // exportarExellToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            this.exportarExellToolStripMenuItem.Name = "exportarExellToolStripMenuItem";
-            this.exportarExellToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.exportarExellToolStripMenuItem.Text = "Exportar Exell";
-            this.exportarExellToolStripMenuItem.Click += new System.EventHandler(this.exportarExellToolStripMenuItem_Click);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(172, 6);
+            // 
+            // categoriasToolStripMenuItem
+            // 
+            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.categoriasToolStripMenuItem.Text = "Categorias";
+            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -198,6 +214,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem exportarExellToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
     }
 }
 
