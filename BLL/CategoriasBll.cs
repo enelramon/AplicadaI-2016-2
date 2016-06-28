@@ -37,5 +37,17 @@ namespace BLL
             return db.Categorias.Find(IdCategoria);
 
         }
+
+        public static List<Categorias> GetLista()
+        {
+            List<Categorias> lista = new List<Categorias>();
+
+            var db = new MoviesDb();
+
+            lista = db.Categorias.ToList();
+
+            return lista;
+
+        }
     }
 }

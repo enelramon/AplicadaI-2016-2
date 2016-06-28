@@ -13,6 +13,7 @@ namespace DAL
         public MoviesDb() : base("name=MoviesDb")
         {
         }
+
         public virtual DbSet<Categorias> Categorias { get; set; }
         public virtual  DbSet<Peliculas> Peliculas { get; set; }
         public virtual DbSet<Autores> Autores { get; set; }

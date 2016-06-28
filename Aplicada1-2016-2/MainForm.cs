@@ -33,5 +33,11 @@ namespace Aplicada1_2016_2
             rCategorias rCategoria = new rCategorias();
             rCategoria.Show();
         }
+
+        private void categoriasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaCategorias consulta = new Consultas.ConsultaCategorias();
+            consulta.Show();
+        }
     }
 }
