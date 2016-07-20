@@ -9,7 +9,9 @@ namespace DAL
 {
     public class MoviesDb : DbContext
     {
-        //You should always use the name= syntax when you are using a connection string in the config file. This ensures that if the connection string is not present then Entity Framework will throw rather than creating a new database by convention.
+        //You should always use the name= syntax when you are using a connection string in the config file. 
+        //This ensures that if the connection string is not present then Entity Framework will throw rather 
+        //than creating a new database by convention.
         public MoviesDb() : base("name=MoviesDb")
         {
         }
@@ -20,6 +22,18 @@ namespace DAL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Peliculas>()
+               .HasMany<Autores>(a => a.Autores)
+               .WithMany(p => p.Peliculas)
+               .Map(pa =>
+               {
+                   pa.MapLeftKey("PeliculaId");
+                   pa.MapRightKey("AutorId");
+                   pa.ToTable("PeliculasAutores");
+               });
+
+           
+           
         }
     }
 }

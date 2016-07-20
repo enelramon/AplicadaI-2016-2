@@ -39,5 +39,23 @@ namespace Aplicada1_2016_2
             Consultas.ConsultaCategorias consulta = new Consultas.ConsultaCategorias();
             consulta.Show();
         }
+
+        private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rPeliculas rpelicula = new rPeliculas();
+            rpelicula.ShowDialog(); 
+        }
+
+        private void categoriasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            rCategorias rcategoria = new rCategorias();
+            rcategoria.Show();
+        }
+
+        private void peliculasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaPeliculas consulta = new Consultas.ConsultaPeliculas();
+            consulta.Show();
+        }
     }
 }

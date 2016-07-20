@@ -11,6 +11,7 @@
     <AssemblyName>Aplicada1-2016-2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -81,6 +81,12 @@
     <Compile Include="Consultas\ConsultaCategorias.Designer.cs">
       <DependentUpon>ConsultaCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\ConsultaPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaPeliculas.Designer.cs">
+      <DependentUpon>ConsultaPeliculas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ReportingViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     <Compile Include="rCategorias.Designer.cs">
       <DependentUpon>rCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="rPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rPeliculas.Designer.cs">
+      <DependentUpon>rPeliculas.cs</DependentUpon>
+    </Compile>
     <Compile Include="SepararCadenas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="Consultas\ConsultaCategorias.resx">
       <DependentUpon>ConsultaCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaPeliculas.resx">
+      <DependentUpon>ConsultaPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ReportingViewer.resx">
       <DependentUpon>ReportingViewer.cs</DependentUpon>
@@ -133,11 +148,12 @@
     <EmbeddedResource Include="rCategorias.resx">
       <DependentUpon>rCategorias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ListadoCategorias.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadoCategorias.rdlc" />
     <EmbeddedResource Include="Reportes\ListadoPeliculas.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rPeliculas.resx">
+      <DependentUpon>rPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SepararCadenas.resx">
       <DependentUpon>SepararCadenas.cs</DependentUpon>
@@ -167,11 +183,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\MoviesDb.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Database\MoviesDb_log.ldf">
       <DependentUpon>MoviesDb.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Database\MoviesScript.sql" />
     <Content Include="DbScripts\Script.sql" />
